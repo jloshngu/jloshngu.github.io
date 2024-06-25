@@ -1,5 +1,5 @@
-.box {
-  Font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.ngu-box {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   flex-flow: row wrap;
   flex: 1;
@@ -7,58 +7,77 @@
   justify-content: space-around;
 }
 
-.tile {
+.ngu-tile {
   text-align: center;
   margin: 10px;
   width: 434px; /* Change to 100% */
 }
 
-.tile-header {
+.ngu-tile-header {
   text-decoration: none;
 }
 
-.header-link {
+.ngu-header-link {
   background-color:#71984a; 
   color:#FFFFFF;
 }
 
-.header-text {
+.ngu-header-text {
   display: inline-block; 
   color: #ffffff; 
   border-bottom: none; 
   text-align: center;
 }
 
-.tile-body {
+.ngu-tile-body {
   padding: 5px 10px; 
   min-height: 120px; 
   background-color: #F1F2F2;
   color: #000000;
 }
 
-.tile-click {
+.ngu-tile-click {
   font-size: 16px;
   color: #03819d;
   text-decoration: none;
 }
 
-ul {
+ul.ngu-ul {
   list-style: none;
   margin: 0;
   padding: 1em;
 }
 
-a.link:link {
+a.ngu-link {
+  color: #03819D;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+a.ngu-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #C8102E;
+  transform-origin: bottom left;
+  transition: transform 0.25s ease-out;
+}
+
+a.ngu-link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+a.ngu-link:visited {
   color: #03819D;
   text-decoration: none;
 }
 
-a.link:visited {
-  color: #03819D;
-  text-decoration: none;
-}
-
-a.link:hover {
+a.ngu-link:hover {
   color: #C8102E;
-  text-decoration: underline;
 }
