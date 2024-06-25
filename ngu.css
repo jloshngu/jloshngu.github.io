@@ -1,0 +1,87 @@
+a {
+    text-decoration: none !important;
+  {
+  
+  .ngu-box {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .ngu-tile {
+    text-align: center;
+    margin: 10px;
+    width: 434px; /* Change to 100% */
+  }
+  
+  .ngu-tile-header {
+    text-decoration: none;
+  }
+  
+  .ngu-header-link {
+    background-color:#71984a; 
+    color:#FFFFFF;
+  }
+  
+  .ngu-header-text {
+    display: inline-block; 
+    color: #ffffff; 
+    border-bottom: none; 
+    text-align: center;
+  }
+  
+  .ngu-tile-body {
+    padding: 5px 10px; 
+    min-height: 120px; 
+    background-color: #F1F2F2;
+    color: #000000;
+  }
+  
+  .ngu-tile-click {
+    font-size: 16px;
+    color: #03819d;
+    text-decoration: none;
+  }
+  
+  ul.ngu-ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+  }
+  
+  a.ngu-link {
+    color: #03819D;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+  }
+  
+  a.ngu-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #C8102E;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  a.ngu-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom right;
+  }
+  
+  a.ngu-link:visited {
+    color: #03819D;
+    text-decoration: none;
+  }
+  
+  a.ngu-link:hover {
+    color: #C8102E;
+  }
